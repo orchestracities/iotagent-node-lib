@@ -17,6 +17,18 @@
           "name": "status",
           "type": "Boolean"
         }
+      ],
+      "lazy": [
+        {
+          "name": "luminescence",
+          "type": "Lumens"
+        }
+      ],
+      "commands":[
+        {
+          "name": "wheel1",
+          "type": "Wheel"
+        }
       ]
     }
   ]
