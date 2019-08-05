@@ -17,6 +17,16 @@ The IoTAgent Library provides an expression language for measurement transformat
 information coming from the South Bound APIs to the information reported to the Context Broker. Expressions in this
 language can be configured for provisioned attributes as explained in the Device Provisioning API section in the
 main README.md.
+As an alternative, the IoTAgent Library supports as well [JEXL](https://github.com/TomFrost/jexl).
+In this section we provide only details for the native IoTAgent Library 
+expression language. To use JEXL, you will need to replace the native language
+plugin with the JEXL one, e.g.:
+
+```js
+  iotAgentLib.addUpdateMiddleware(iotAgentLib.dataPlugins.mozjexlTransformation.update);
+```
+
+JEXL language details are discussed [here](https://github.com/TomFrost/jexl#all-the-details).
 
 ##  Measurement transformation
 
